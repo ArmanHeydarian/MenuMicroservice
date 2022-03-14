@@ -1,0 +1,81 @@
+[INFO ] 2022-03-14 12:55:08.051 [http-nio-8081-exec-7] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2022-03-14 12:55:08.053 [http-nio-8081-exec-7] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[DEBUG] 2022-03-14 12:55:08.053 [http-nio-8081-exec-7] DispatcherServlet - Detected StandardServletMultipartResolver
+[DEBUG] 2022-03-14 12:55:08.053 [http-nio-8081-exec-7] DispatcherServlet - Detected AcceptHeaderLocaleResolver
+[DEBUG] 2022-03-14 12:55:08.053 [http-nio-8081-exec-7] DispatcherServlet - Detected FixedThemeResolver
+[DEBUG] 2022-03-14 12:55:08.053 [http-nio-8081-exec-7] DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@108b121f
+[DEBUG] 2022-03-14 12:55:08.054 [http-nio-8081-exec-7] DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@41bb1f09
+[DEBUG] 2022-03-14 12:55:08.054 [http-nio-8081-exec-7] DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[INFO ] 2022-03-14 12:55:08.054 [http-nio-8081-exec-7] DispatcherServlet - Completed initialization in 1 ms
+[DEBUG] 2022-03-14 12:55:08.066 [http-nio-8081-exec-7] DispatcherServlet - POST "/api/menu/sync", parameters={}
+[DEBUG] 2022-03-14 12:55:08.076 [http-nio-8081-exec-7] RequestMappingHandlerMapping - Mapped to com.takeaway.menumicroservice.api.MenuController#syncMenu(MenuDto)
+[DEBUG] 2022-03-14 12:55:08.321 [http-nio-8081-exec-7] RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [com.takeaway.menumicroservice.domain.dto.MenuDto@69d07f52]
+[DEBUG] 2022-03-14 12:55:10.809 [http-nio-8081-exec-7] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2022-03-14 12:55:10.809 [http-nio-8081-exec-7] TransactionImpl - begin
+[DEBUG] 2022-03-14 12:55:10.831 [http-nio-8081-exec-7] SQL - select next_val as id_val from hibernate_sequence for update
+[DEBUG] 2022-03-14 12:55:10.834 [http-nio-8081-exec-7] SQL - update hibernate_sequence set next_val= ? where next_val=?
+[DEBUG] 2022-03-14 12:55:10.841 [http-nio-8081-exec-7] AbstractSaveEventListener - Generated identifier: 136, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+[DEBUG] 2022-03-14 12:55:10.863 [http-nio-8081-exec-7] SQL - select next_val as id_val from hibernate_sequence for update
+[DEBUG] 2022-03-14 12:55:10.864 [http-nio-8081-exec-7] SQL - update hibernate_sequence set next_val= ? where next_val=?
+[DEBUG] 2022-03-14 12:55:10.870 [http-nio-8081-exec-7] AbstractSaveEventListener - Generated identifier: 137, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+[DEBUG] 2022-03-14 12:55:10.871 [http-nio-8081-exec-7] SQL - select next_val as id_val from hibernate_sequence for update
+[DEBUG] 2022-03-14 12:55:10.872 [http-nio-8081-exec-7] SQL - update hibernate_sequence set next_val= ? where next_val=?
+[DEBUG] 2022-03-14 12:55:10.877 [http-nio-8081-exec-7] AbstractSaveEventListener - Generated identifier: 138, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+[DEBUG] 2022-03-14 12:55:10.878 [http-nio-8081-exec-7] SQL - select next_val as id_val from hibernate_sequence for update
+[DEBUG] 2022-03-14 12:55:10.879 [http-nio-8081-exec-7] SQL - update hibernate_sequence set next_val= ? where next_val=?
+[DEBUG] 2022-03-14 12:55:10.885 [http-nio-8081-exec-7] AbstractSaveEventListener - Generated identifier: 139, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+[DEBUG] 2022-03-14 12:55:10.888 [http-nio-8081-exec-7] TransactionImpl - committing
+[DEBUG] 2022-03-14 12:55:10.889 [http-nio-8081-exec-7] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2022-03-14 12:55:10.890 [http-nio-8081-exec-7] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2022-03-14 12:55:10.895 [http-nio-8081-exec-7] Collections - Collection found: [com.takeaway.menumicroservice.domain.model.Menu.categories#136], was: [<unreferenced>] (initialized)
+[DEBUG] 2022-03-14 12:55:10.896 [http-nio-8081-exec-7] Collections - Collection found: [com.takeaway.menumicroservice.domain.model.Category.products#137], was: [<unreferenced>] (initialized)
+[DEBUG] 2022-03-14 12:55:10.896 [http-nio-8081-exec-7] Collections - Collection found: [com.takeaway.menumicroservice.domain.model.Product.ProductSizes#138], was: [<unreferenced>] (initialized)
+[DEBUG] 2022-03-14 12:55:10.897 [http-nio-8081-exec-7] AbstractFlushingEventListener - Flushed: 4 insertions, 0 updates, 0 deletions to 4 objects
+[DEBUG] 2022-03-14 12:55:10.898 [http-nio-8081-exec-7] AbstractFlushingEventListener - Flushed: 3 (re)creations, 0 updates, 0 removals to 3 collections
+[DEBUG] 2022-03-14 12:55:10.899 [http-nio-8081-exec-7] EntityPrinter - Listing entities:
+[DEBUG] 2022-03-14 12:55:10.899 [http-nio-8081-exec-7] EntityPrinter - com.takeaway.menumicroservice.domain.model.Menu{resturantId=1, id=136, categories=[com.takeaway.menumicroservice.domain.model.Category#137], title=hghj}
+[DEBUG] 2022-03-14 12:55:10.899 [http-nio-8081-exec-7] EntityPrinter - com.takeaway.menumicroservice.domain.model.Product{totalQuantity=0, ProductSizes=[com.takeaway.menumicroservice.domain.model.ProductSize#139], imageUrl=1, modifiedDate=null, description=fdg gdbhg, id=138, category=null, title=Icy monkey}
+[DEBUG] 2022-03-14 12:55:10.899 [http-nio-8081-exec-7] EntityPrinter - com.takeaway.menumicroservice.domain.model.Category{id=137, menu=null, title=Beverages, createDate=null, products=[com.takeaway.menumicroservice.domain.model.Product#138]}
+[DEBUG] 2022-03-14 12:55:10.900 [http-nio-8081-exec-7] EntityPrinter - com.takeaway.menumicroservice.domain.model.ProductSize{product=null, size=MEDIUM, price=10, id=139, availability=true}
+[DEBUG] 2022-03-14 12:55:10.925 [http-nio-8081-exec-7] SQL - insert into menu (resturant_id, title, id) values (?, ?, ?)
+[DEBUG] 2022-03-14 12:55:10.930 [http-nio-8081-exec-7] SQL - insert into category (create_date, menu_id, title, id) values (?, ?, ?, ?)
+[DEBUG] 2022-03-14 12:55:10.934 [http-nio-8081-exec-7] SQL - insert into product (category_id, description, image_url, modified_date, title, total_quantity, id) values (?, ?, ?, ?, ?, ?, ?)
+[DEBUG] 2022-03-14 12:55:10.937 [http-nio-8081-exec-7] SQL - insert into product_size (availability, price, product_id, size, id) values (?, ?, ?, ?, ?)
+[DEBUG] 2022-03-14 12:55:11.526 [http-nio-8081-exec-7] HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2022-03-14 12:55:11.527 [http-nio-8081-exec-7] HttpEntityMethodProcessor - Writing ["Menu Saved Successfully"]
+[DEBUG] 2022-03-14 12:55:11.556 [http-nio-8081-exec-7] JdbcCoordinatorImpl - HHH000420: Closing un-released batch
+[DEBUG] 2022-03-14 12:55:11.557 [http-nio-8081-exec-7] DispatcherServlet - Completed 200 OK
+[INFO ] 2022-03-14 13:03:25.098 [main] MenuMicroserviceApplication - Starting MenuMicroserviceApplication using Java 1.8.0_312 on ArmanH-1075 with PID 9408 (D:\PersonalProjects\MenuMicroservice\MenuMicroservice\build\classes\java\main started by armanh in D:\PersonalProjects\MenuMicroservice\MenuMicroservice)
+[INFO ] 2022-03-14 13:03:25.102 [main] MenuMicroserviceApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-03-14 13:03:28.733 [main] MenuMicroserviceApplication - Started MenuMicroserviceApplication in 3.928 seconds (JVM running for 4.733)
+[INFO ] 2022-03-14 13:03:51.874 [http-nio-8081-exec-1] MenuService - Menu Saved Successfully
+[ERROR] 2022-03-14 13:04:15.239 [http-nio-8081-exec-5] CustomExceptionHandler - com.takeaway.menumicroservice.ExceptionHandler.ErrorResponse@4b71f77a
+[INFO ] 2022-03-14 13:06:47.287 [main] MenuMicroserviceApplication - Starting MenuMicroserviceApplication using Java 1.8.0_312 on ArmanH-1075 with PID 34812 (D:\PersonalProjects\MenuMicroservice\MenuMicroservice\build\classes\java\main started by armanh in D:\PersonalProjects\MenuMicroservice\MenuMicroservice)
+[INFO ] 2022-03-14 13:06:47.291 [main] MenuMicroserviceApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-03-14 13:06:51.326 [main] MenuMicroserviceApplication - Started MenuMicroserviceApplication in 4.323 seconds (JVM running for 5.091)
+[ERROR] 2022-03-14 13:07:06.266 [http-nio-8081-exec-2] CustomExceptionHandler - ErrorResponse{message='Server Database Error', details=[Could not commit JPA transaction; nested exception is javax.persistence.RollbackException: Error while committing the transaction]}
+[INFO ] 2022-03-14 13:30:00.327 [main] MenuMicroserviceApplication - Starting MenuMicroserviceApplication using Java 1.8.0_312 on ArmanH-1075 with PID 44668 (D:\PersonalProjects\MenuMicroservice\MenuMicroservice\build\classes\java\main started by armanh in D:\PersonalProjects\MenuMicroservice\MenuMicroservice)
+[INFO ] 2022-03-14 13:30:00.331 [main] MenuMicroserviceApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-03-14 13:30:03.967 [main] MenuMicroserviceApplication - Started MenuMicroserviceApplication in 3.929 seconds (JVM running for 4.712)
+[ERROR] 2022-03-14 13:30:12.286 [http-nio-8081-exec-2] CustomExceptionHandler - ErrorResponse{message='Server Database Error', details=[Could not commit JPA transaction; nested exception is javax.persistence.RollbackException: Error while committing the transaction]}
+[ERROR] 2022-03-14 13:30:26.793 [http-nio-8081-exec-4] CustomExceptionHandler - ErrorResponse{message='Server Database Error', details=[Could not commit JPA transaction; nested exception is javax.persistence.RollbackException: Error while committing the transaction]}
+[INFO ] 2022-03-14 13:33:21.698 [main] MenuMicroserviceApplication - Starting MenuMicroserviceApplication using Java 1.8.0_312 on ArmanH-1075 with PID 40268 (D:\PersonalProjects\MenuMicroservice\MenuMicroservice\build\classes\java\main started by armanh in D:\PersonalProjects\MenuMicroservice\MenuMicroservice)
+[INFO ] 2022-03-14 13:33:21.703 [main] MenuMicroserviceApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-03-14 13:33:25.658 [main] MenuMicroserviceApplication - Started MenuMicroserviceApplication in 4.247 seconds (JVM running for 4.949)
+[ERROR] 2022-03-14 13:33:41.219 [http-nio-8081-exec-1] CustomExceptionHandler - ErrorResponse{message='Server Database Error', details=[Could not commit JPA transaction; nested exception is javax.persistence.RollbackException: Error while committing the transaction]}
+[INFO ] 2022-03-14 13:34:43.415 [main] MenuMicroserviceApplication - Starting MenuMicroserviceApplication using Java 1.8.0_312 on ArmanH-1075 with PID 41036 (D:\PersonalProjects\MenuMicroservice\MenuMicroservice\build\classes\java\main started by armanh in D:\PersonalProjects\MenuMicroservice\MenuMicroservice)
+[INFO ] 2022-03-14 13:34:43.421 [main] MenuMicroserviceApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-03-14 13:34:47.337 [main] MenuMicroserviceApplication - Started MenuMicroserviceApplication in 4.2 seconds (JVM running for 4.927)
+[ERROR] 2022-03-14 13:34:55.770 [http-nio-8081-exec-3] CustomExceptionHandler - ErrorResponse{message='Server Database Error', details=[Could not commit JPA transaction; nested exception is javax.persistence.RollbackException: Error while committing the transaction]}
+[INFO ] 2022-03-14 13:36:46.162 [main] MenuMicroserviceApplication - Starting MenuMicroserviceApplication using Java 1.8.0_312 on ArmanH-1075 with PID 38200 (D:\PersonalProjects\MenuMicroservice\MenuMicroservice\build\classes\java\main started by armanh in D:\PersonalProjects\MenuMicroservice\MenuMicroservice)
+[INFO ] 2022-03-14 13:36:46.166 [main] MenuMicroserviceApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-03-14 13:36:49.835 [main] MenuMicroserviceApplication - Started MenuMicroserviceApplication in 3.974 seconds (JVM running for 4.721)
+[ERROR] 2022-03-14 13:36:56.858 [http-nio-8081-exec-1] CustomExceptionHandler - ErrorResponse{message='Server Database Error', details=[Could not commit JPA transaction; nested exception is javax.persistence.RollbackException: Error while committing the transaction]}
+[INFO ] 2022-03-14 13:37:16.951 [main] MenuMicroserviceApplication - Starting MenuMicroserviceApplication using Java 1.8.0_312 on ArmanH-1075 with PID 39344 (D:\PersonalProjects\MenuMicroservice\MenuMicroservice\build\classes\java\main started by armanh in D:\PersonalProjects\MenuMicroservice\MenuMicroservice)
+[INFO ] 2022-03-14 13:37:16.955 [main] MenuMicroserviceApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-03-14 13:37:20.845 [main] MenuMicroserviceApplication - Started MenuMicroserviceApplication in 4.173 seconds (JVM running for 4.874)
+[ERROR] 2022-03-14 13:37:23.432 [http-nio-8081-exec-2] CustomExceptionHandler - ErrorResponse{message='Server Database Error', details=[Could not commit JPA transaction; nested exception is javax.persistence.RollbackException: Error while committing the transaction]}
+[INFO ] 2022-03-14 13:38:27.798 [main] MenuMicroserviceApplication - Starting MenuMicroserviceApplication using Java 1.8.0_312 on ArmanH-1075 with PID 28324 (D:\PersonalProjects\MenuMicroservice\MenuMicroservice\build\classes\java\main started by armanh in D:\PersonalProjects\MenuMicroservice\MenuMicroservice)
+[INFO ] 2022-03-14 13:38:27.802 [main] MenuMicroserviceApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-03-14 13:38:31.947 [main] MenuMicroserviceApplication - Started MenuMicroserviceApplication in 4.446 seconds (JVM running for 5.196)
+[ERROR] 2022-03-14 13:38:36.390 [http-nio-8081-exec-1] CustomExceptionHandler - ErrorResponse{message='Server Database Error', details=[Could not commit JPA transaction; nested exception is javax.persistence.RollbackException: Error while committing the transaction]}
