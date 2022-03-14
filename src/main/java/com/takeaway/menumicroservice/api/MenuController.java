@@ -17,11 +17,13 @@ public class MenuController {
     @Autowired
     private MenuService menuService;
 
+    // This Method is For Both Adding and Updating (Syncing) Menus from Resturants
     @PostMapping(path = "/sync")
     public ResponseEntity<String> syncMenu(@RequestBody MenuDto menuDto) throws Exception , MethodArgumentNotValidException {
         return menuService.syncMenu(menuDto);
     }
 
+    // This Method is Get Menus from TakeAway.com
     @GetMapping(path = "/get" , produces = {"application/json"})
     public ResponseEntity<Menu> getMenuByResturantId(@RequestParam(value = "resturantId"  ) Integer resturantId) throws Exception , RecordNotFoundException {
         Menu menu = menuService.getMenuByResturantId(resturantId);
