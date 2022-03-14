@@ -19,4 +19,13 @@ public class ErrorResponse
     private List<String> details;
 
     //Getter and setters
+
+
+    @Override
+    public String toString() {
+        return "ErrorResponse{" +
+                "message='" + message + '\'' +
+                ", details=" + details +
+                '}';
+    }
 }
