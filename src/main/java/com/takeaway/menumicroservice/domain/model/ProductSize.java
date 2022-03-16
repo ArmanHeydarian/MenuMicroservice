@@ -34,7 +34,6 @@ public class ProductSize {
     public int getId() {
         return id;
     }
-
     public void setId(int id) {
         this.id = id;
     }
@@ -42,7 +41,6 @@ public class ProductSize {
     public Boolean getAvailability() {
         return availability;
     }
-
     public void setAvailability(Boolean availability) {
         this.availability = availability;
     }
@@ -50,7 +48,6 @@ public class ProductSize {
     public Integer getPrice() {
         return price;
     }
-
     public void setPrice(Integer price) {
         this.price = price;
     }
@@ -58,7 +55,6 @@ public class ProductSize {
     public Product getProduct() {
         return product;
     }
-
     public void setProduct(Product product) {
         this.product = product;
     }

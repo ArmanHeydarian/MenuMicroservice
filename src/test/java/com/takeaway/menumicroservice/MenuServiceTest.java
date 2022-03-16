@@ -15,9 +15,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit4.SpringRunner;
-
 import static org.junit.jupiter.api.Assertions.*;
-
 import java.util.ArrayList;
 import java.util.Optional;
 
@@ -25,15 +23,13 @@ import java.util.Optional;
 @SpringBootTest()
 class MenuServiceTest {
 
-    //@Autowired
-    IMenuService menuService;
-
     @MockBean
     MenuRepository menuRepository;
 
     @MockBean
     ProductSizeRepository productSizeRepository;
 
+    IMenuService menuService;
     MenuDto menuDto;
     Menu menu;
     ProductUpdateDto productUpdateDto;
